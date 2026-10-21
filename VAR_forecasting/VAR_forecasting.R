@@ -1,4 +1,3 @@
-getwd()
 library(zoo)
 library(dplyr)
 library(BVAR)
@@ -12,11 +11,11 @@ library(gt)
 # ------------------------------------ #
 
 # Load data
-gdp <- read.csv("ECB Data Portal_gdp.csv")
-cpi <- read.csv("ECB Data Portal_cpi.csv")
-irt <- read.csv("ECB Data Portal_irt.csv")
-unemp <- read.csv("ECB Data Portal_unemp.csv")
-debt <- read.csv("ECB Data Portal_debt.csv")
+gdp <- read.csv("data/ECB Data Portal_gdp.csv")
+cpi <- read.csv("data/ECB Data Portal_cpi.csv")
+irt <- read.csv("data/ECB Data Portal_irt.csv")
+unemp <- read.csv("data/ECB Data Portal_unemp.csv")
+debt <- read.csv("data/ECB Data Portal_debt.csv")
 
 colnames(irt)[3] <- "interest_rate"
 colnames(cpi)[3] <- "infl"
